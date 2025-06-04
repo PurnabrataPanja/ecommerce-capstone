@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>ShopEasy - Products</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Header -->
+<header>
+  <div class="container nav-container">
+    <a href="index.html" class="logo">🛍️ <strong>ShopEasy</strong></a>
+    <nav>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="products.html">Products</a></li>
+        <li><a href="cart.html">Cart</a></li>
+        <li><a href="checkout.html">Checkout</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+
+  <!-- Product Controls -->
+  <div class="container">
+    <div class="controls">
+      <select id="category-filter">
+        <option value="all">All Categories</option>
+        <option value="Phones">Phones</option>
+        <option value="Laptops">Laptops</option>
+        <option value="Accessories">Accessories</option>
+      </select>
+
+      <select id="sort-by">
+        <option value="default">Sort by</option>
+        <option value="price-asc">Price: Low to High</option>
+        <option value="price-desc">Price: High to Low</option>
+        <option value="name-asc">Name: A–Z</option>
+        <option value="name-desc">Name: Z–A</option>
+      </select>
+    </div>
+  </div>
+
+  <!-- Product List -->
+  <div class="container">
+    <div id="product-list" class="product-grid">
+      <!-- JS will load product cards here -->
+    </div>
+  </div>
+
+  <script src="data.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>ShopEasy - Checkout</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <div class="container nav-container">
+      <h1 class="logo">🛍️ ShopEasy</h1>
+      <nav>
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="products.html">Products</a></li>
+          <li><a href="cart.html">Cart</a></li>
+          <li><a href="checkout.html">Checkout</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Checkout Form -->
+  <div class="container">
+    <h2>Checkout</h2>
+    <form id="checkout-form">
+      <input type="text" placeholder="Full Name" required />
+      <input type="email" placeholder="Email Address" required />
+      <input type="text" placeholder="Shipping Address" required />
+      <input type="text" placeholder="City" required />
+      <input type="text" placeholder="ZIP Code" required />
+      <input type="tel" placeholder="Phone Number" required />
+      <button type="submit" class="btn">Place Order</button>
+    </form>
+  </div>
+
+  <script>
+    const form = document.getElementById("checkout-form");
+    form.addEventListener("submit", function (e) {
+      e.preventDefault();
+      alert("🎉 Order placed successfully!");
+      localStorage.removeItem("cart");
+      window.location.href = "index.html";
+    });
+  </script>
+
+</body>
+</html>
