@@ -63,7 +63,7 @@ header {
 
 /* Hero Section */
 #hero {
-  background: url('/Task5/images/hero.jpg') center/cover no-repeat;
+  background: url('hero.jpg') center/cover no-repeat;
   height: 90vh;
   display: flex;
   align-items: center;
